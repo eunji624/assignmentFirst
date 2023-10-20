@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,11 +14,11 @@
 
     <main>
       <div class="searchContainer">
+        <!-- 페이지 로드되자마자 커서 오도록 autofocus설정 -->
         <input
           id="searchInput"
           type="text"
           placeholder="영화 제목을 검색해 보세요"
-          autofocus
         />
         <button id="searchBtn">검색</button>
       </div>
@@ -27,19 +27,26 @@
 
       <div class="cardsWrap">
         <div class="cardContainer">
-          <div class="card">
+          <!-- <div class="card">
             <img class="poster" src="" alt="" />
             <h5 class="title"></h5>
             <span class="comment"></span>
             <p class="avg"></p>
-          </div>
+          </div> -->
         </div>
         <div id="moreWrap">
           <button id="more">more</button>
         </div>
       </div>
     </main>
-
+    <div>
+      <div
+        class="wrap"
+        style="background-color: blue; height: 100px; width: 100px"
+      >
+        <button class="testBtn">눌려</button>
+      </div>
+    </div>
     <footer>
       <div>
         <span id="footerText">Made By .</span>
