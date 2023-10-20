@@ -119,6 +119,10 @@ footer {
   font-weight: 700;
 }
 
+img {
+  max-width: 350px;
+  max-height: 450px;
+}
 .poster {
   height: fit-content;
   width: 100%;

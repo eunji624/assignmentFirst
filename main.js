@@ -145,11 +145,3 @@ document
 function locat(goto) {
   window.location.href = `https://www.themoviedb.org/movie/${goto}?language=ko`;
 }
-
-document.querySelector(".wrap").addEventListener("click", function (e) {
-  e.stopPropagation();
-  console.log("부모요소");
-});
-document.querySelector(".testBtn").addEventListener("click", function () {
-  console.log("자식요소");
-});
