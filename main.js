@@ -120,12 +120,15 @@ async function search() {
   if (!inputVal) {
     return alert("검색어를 입력하세요");
   }
+  console.log(num);
 
+  inputVal = input.value;
   //한글 안깨지게 encodeURI()
-  // inputVal = encodeURI(inputVal);
+  inputVal = encodeURI(inputVal);
   searchUrl = `https://api.themoviedb.org/3/search/movie?query=${inputVal}&include_adult=false&language=ko-KR&page=${num}`;
   console.log(searchUrl);
 
+  isSearch = true;
   //검색결과 가져올 전체 데이터
   fetch(searchUrl, options)
     .then((response) => response.json())
