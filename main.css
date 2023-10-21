@@ -75,15 +75,17 @@ footer {
 
 #searchBtn:hover {
   height: 46px;
-  width: 66px;
-  font-size: 20px;
+  width: 70px;
+  font-size: 19px;
 }
-/* .line {
-  height: 1px;
-  width: 100%;
-  background-color: black;
-  border: 1px dashed rgb(11, 43, 0);
-} */
+
+.upIconWarp {
+  position: fixed;
+  top: 90%;
+  right: 2.5vw;
+  color: rgb(212, 214, 214);
+}
+
 .cardsWrap {
   background-color: rgb(0, 0, 0);
   width: 90%;
@@ -101,6 +103,7 @@ footer {
   justify-content: center;
   /* 넘어감 카드 1개 보여줬다가 4개 보여줫다가*/
   flex-wrap: wrap;
+  min-height: 500px;
 }
 
 .card {
@@ -122,6 +125,9 @@ footer {
 img {
   max-width: 350px;
   max-height: 450px;
+  min-width: 300px;
+  min-height: 450px;
+  object-fit: cover;
 }
 .poster {
   height: fit-content;
@@ -166,4 +172,17 @@ img {
   font-size: 18px;
   font-family: "Gugi", sans-serif;
   letter-spacing: 4px;
+}
+
+.hide {
+  display: none;
+}
+
+.noResult {
+  color: azure;
+  font-weight: bolder;
+  letter-spacing: 4px;
+  word-spacing: 4px;
+  font-size: 40px;
+  font-family: "Gugi", sans-serif;
 }

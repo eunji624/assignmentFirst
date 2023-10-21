@@ -3,7 +3,7 @@ function search() {
   if (num === 1) {
     temp = "";
   }
-
+  console.log(searchTotal);
   let inputVal = input.value;
   //한글 안깨지게 encodeURI()
   inputVal = encodeURI(inputVal);
