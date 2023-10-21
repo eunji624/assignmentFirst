@@ -191,11 +191,8 @@ document
 function locat(goto) {
   window.location.href = `https://www.themoviedb.org/movie/${goto}?language=ko`;
 }
-<<<<<<< HEAD
 
 //화살표 누르면 좌표 맨 위로
 document.querySelector(".upIconWarp").addEventListener("click", function () {
   window.scrollTo(0, 0);
 });
-=======
->>>>>>> bf9f1d6 ([fix] : 화면 커졌을때 처리)
